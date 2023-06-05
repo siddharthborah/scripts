@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Script to update the current branch from origin master
+
 # Save the current branch name
 CURRENT_BRANCH=$(git branch --show-current)
 
@@ -9,8 +11,6 @@ git checkout master
 # Pull any updates from the origin
 git pull --rebase origin master;
 git submodule update --init --recursive
-#git fetch origin
-#git rebase origin/master
 
 # Switch back to the original branch
 git checkout $CURRENT_BRANCH
