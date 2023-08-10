@@ -26,7 +26,7 @@ Example: ls | tee file.txt
 ### grep (Extended Usage)
 Description: Search for patterns in files or input data using regular expressions.
 Usage: grep [options] pattern [file_path]
-Example: `grep -r "keyword
+Example: grep -r "keyword"
 
 ### base64
 Description: Encode or decode binary data in Base64 format.
